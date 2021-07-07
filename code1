@@ -26,9 +26,7 @@ public class main
 
          Scanner s = new Scanner(System.in);
 
-         int totalNumberOfStudents = 0, numberOfAs = 0, numberOfBs = 0, numberOfCs = 0, numberOfDs = 0, gradeH    older;
-
-         double mean = 0; 
+         int totalNumberOfStudents = 0, numberOfAs = 0, numberOfBs = 0, numberOfCs = 0, numberOfDs = 0, gradeHolder;
 
          char flag = 'c';
 
