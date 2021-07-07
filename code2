@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class main
+{
+	public static void pln(String str)
+	{
+		System.out.println(str);
+	}
+	public static void main(String[] args)
+	{
+			
+		final double milk = 3.99;
+		final double rice = 6.99;
+		final double orangeJuice = 5.99;
+		final double iceCream = 4.99;
+		Scanner s = new Scanner(System.in);
+		int flag = 1,  option = 0;
+		double total = 0;
+		do{
+				pln("1: Milk: 3.99");
+				pln("2: rice: 6.99");
+				pln("3: orange juice: 5.99");
+				pln("4: ice cream: 4.99");
+				pln("Enter a product number: ");
+				option = s.nextInt();
+				switch(option)
+				{
+				case 1:
+					total +=milk;
+					break;
+				case 2:
+					total += rice;
+					break;
+				case 3:
+					total += orangeJuice;
+					break;
+				case 4:
+				 	total += iceCream;
+					break;
+				default:
+					pln("Wrong input, $0 return");
+					break;	
+				}
+				pln("Entre 0 to quit, or enter '1' to continue");
+				flag = s.nextInt();
+			}while(flag != 0);
+			System.out.println("Total : " + total);
+			pln("Thank you for coming");
+			s.close();
+	}
+}	
