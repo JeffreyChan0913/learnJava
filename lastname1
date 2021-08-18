@@ -1,0 +1,24 @@
+public class HelloWorld{
+    public static void findLastName(String name){
+        String space = " ";
+        String comma = ","; 
+        int i = 0;
+        while(i< name.length())
+        {
+            if(name.charAt(i) == space.charAt(0))
+            {
+                System.out.println(name.substring(i+1));
+                break;
+            }
+            if(name.charAt(i) == comma.charAt(0))
+            {
+                System.out.println(name.substring(0,i));
+                break;   
+            }
+            i++;
+        }
+    }
+    public static void main(String []args){
+        findLastName("Chan, Jeff");
+    }
+}
