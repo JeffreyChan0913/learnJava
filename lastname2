@@ -1,0 +1,43 @@
+public class HelloWorld{
+    
+    
+    
+    public static void printLastName(boolean holder, final int pos, final String name){
+        if(holder == true){
+            System.out.println(name.substring(0,pos));
+        }
+        else
+        {
+            System.out.println(name.substring(pos+1));
+        }
+    }
+    
+
+    public static void findLastName(final String name){
+        
+        String space = " ";
+        String comma = ","; 
+        int i = 0;
+        while(i< name.length())
+        {
+            if(name.charAt(i) == space.charAt(0))
+            {
+                printLastName(false, i, name);
+                break;
+            }
+            if(name.charAt(i) == comma.charAt(0))
+            {
+                printLastName(true, i, name);
+                break;   
+            }
+            i++;
+        }
+    }
+    
+    
+    
+    
+     public static void main(String []args){
+        findLastName("Endy Zhang");
+     }
+}
