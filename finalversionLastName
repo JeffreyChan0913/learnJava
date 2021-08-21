@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main
+{
+    public static void printLastName(final String name){
+        String space =" ", comma = ","; 
+        int i = 0; 
+        while(true)
+        { // first last 
+            if(name.charAt(i) == space.charAt(0)){
+                System.out.println("Goodbye " + name.substring(i+1));
+                break; 
+            }// last, first 
+            if(name.charAt(i) == comma.charAt(0)){
+                System.out.println("Goodbye " + name.substring(0,i));
+                break;
+            }
+            i++;
+        }
+    }
+    public static void getName(){
+        String name; 
+        Scanner s = new Scanner(System.in); 
+        System.out.print("Enter your full name >>");
+        name = s.nextLine();
+        System.out.println();
+        printLastName(name);
+    }
+    public static void main(String[] args){
+        getName(); 
+    }
+}
