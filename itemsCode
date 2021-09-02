@@ -27,10 +27,10 @@ class HelloWorld {
     public static void menu(){
         Scanner s = new Scanner(System.in);
         final double milk = 3.99;
-		final double rice = 6.99;
-		final double orangeJuice = 5.99;
-		final double iceCream = 4.99;
-		String name;
+	final double rice = 6.99;
+	final double orangeJuice = 5.99;
+	final double iceCream = 4.99;
+	String name;
         name = getName(s); 
 		int option = 0;
 		double total = 0;
