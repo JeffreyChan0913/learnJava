@@ -32,40 +32,40 @@ class HelloWorld {
 	final double iceCream = 4.99;
 	String name;
         name = getName(s); 
-		int option = 0;
-		double total = 0;
-		do{
-				pln("1: Milk: 3.99");
-				pln("2: rice: 6.99");
-				pln("3: orange juice: 5.99");
-				pln("4: ice cream: 4.99");
-				pln("5: quit");
-				pln("Enter a number: ");
-				option = s.nextInt();
-				switch(option)
-				{
-				case 1:
-					total +=milk;
-					break;
-				case 2:
-					total += rice;
-					break;
-				case 3:
-					total += orangeJuice;
-					break;
-				case 4:
-				 	total += iceCream;
-					break;
-				default:
-				    if(option == 5)
-				    {
+	int option = 0;
+	double total = 0;
+	do{
+		pln("1: Milk: 3.99");
+		pln("2: rice: 6.99");
+		pln("3: orange juice: 5.99");
+		pln("4: ice cream: 4.99");
+		pln("5: quit");
+		pln("Enter a number: ");
+		option = s.nextInt();
+		switch(option)
+		{
+			case 1:
+				total +=milk;
+				break;
+			case 2:
+				total += rice;
+				break;
+			case 3:
+				total += orangeJuice;
+				break;
+			case 4:
+			 	total += iceCream;
+				break;
+			default:
+			   	if(option == 5)
+			        {
 				        pln("exiting");
-				    }
-				    else
-					{
-					    pln("adding 0");
-					}
-					break;	
+				}
+				else
+				{
+					pln("adding 0");
+				}
+				break;	
 				}
 			}while(option != 5);
 			System.out.println("Total : " + total);
